@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Testing FlyAway Functionalities  (failed)">
+    <classes>
+      <class name="com.testLib.NewTestFlyAway">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="bookFlight"/>
+          <include name="afterClass"/>
+          <include name="searchFlight"/>
+          <include name="login"/>
+          <include name="register"/>
+        </methods>
+      </class> <!-- com.testLib.NewTestFlyAway -->
+    </classes>
+  </test> <!-- Testing FlyAway Functionalities  (failed) -->
+  <test thread-count="5" name="Testing FlyAway API ,UI (failed)">
+    <classes>
+      <class name="com.restApi.TestApis">
+        <methods>
+          <include name="afterClass"/>
+          <include name="loginByRestAssuredAPI"/>
+          <include name="getBookedFlights"/>
+          <include name="loginCheckUI"/>
+          <include name="dbCheck"/>
+          <include name="registerByRestAssuredAPI"/>
+          <include name="beforeClass"/>
+          <include name="getFLightsOnGivenDate"/>
+        </methods>
+      </class> <!-- com.restApi.TestApis -->
+    </classes>
+  </test> <!-- Testing FlyAway API ,UI (failed) -->
+</suite> <!-- Failed suite [Suite] -->
